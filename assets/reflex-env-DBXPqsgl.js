@@ -1,0 +1,1 @@
+var e={PING:`https://api.mouredev.pro/ping`,EVENT:`wss://api.mouredev.pro/_event`,UPLOAD:`https://api.mouredev.pro/_upload`,AUTH_CODESPACE:`https://api.mouredev.pro/auth-codespace`,HEALTH:`https://api.mouredev.pro/_health`,ALL_ROUTES:`https://api.mouredev.pro/_all_routes`,TRANSPORT:`websocket`,TEST_MODE:!1};export{e as t};

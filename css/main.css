@@ -1,0 +1,157 @@
+/* General */
+
+html {
+    scroll-behavior: smooth;
+    background-color: #1A1A1A;
+}
+
+/* Debería ser suficiente el rx.link del styles.py */
+a:hover {
+    color: #3EB0F9 !important;
+}
+
+textarea {
+    background: transparent !important;
+}
+
+/* Background */
+
+@keyframes background {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes background-mobile {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Slider */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%)
+    }
+}
+
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.slide-track {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    min-width: 200%;
+    height: 100%;
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    width: 150px;
+    height: 100%;
+    margin: 0 16px;
+}
+
+.slick-list {
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+}
+
+.slick-prev {
+    left: -16px !important;
+}
+
+.slick-next {
+    right: -16px !important;
+}
+
+.slick-dots {
+    bottom: -48px !important;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #F7F7F7 !important;
+}
+
+/* Accordion */
+
+button.AccordionTrigger {
+    text-align: left;
+    color: #F7F7F7;
+}
+
+button.AccordionTrigger:hover {
+    color: #1A1A1A;
+    background-color: #FFA61E;
+}
+
+div.AccordionContent {
+    color: #F7F7F7;
+}
+
+/* Cookiebot */
+
+a#CybotCookiebotDialogPoweredbyCybot,
+div#CybotCookiebotDialogPoweredByText {
+    display: none;
+}
+
+#CookiebotWidget .CookiebotWidget-body .CookiebotWidget-main-logo {
+    display: none;
+}
+
+/* Snow */
+
+#SnowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #F7F7F7;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.snowflake:hover {
+    cursor: default;
+}
